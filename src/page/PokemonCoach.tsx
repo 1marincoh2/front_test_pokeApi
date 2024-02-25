@@ -339,12 +339,12 @@ const PokemonCoach = () => {
       <TableContainer component={Paper} sx={{ mt: 5 }}>
         <Table>
           <TableHead>
-            <TableRow>
-              <TableCell>Nombre</TableCell>
-              <TableCell>Apellido</TableCell>
-              <TableCell>Teléfono</TableCell>
-              <TableCell>Medallas</TableCell>
-              <TableCell align="right">Acciones</TableCell>
+            <TableRow style={{ backgroundColor: 'turquoise  ' }}>
+              <TableCell style={{ color: 'white',fontSize: '1.2rem', fontWeight: 'bold' }}>Nombre</TableCell>
+              <TableCell style={{ color: 'white',fontSize: '1.2rem', fontWeight: 'bold' }}>Apellido</TableCell>
+              <TableCell style={{ color: 'white',fontSize: '1.2rem', fontWeight: 'bold' }}>Teléfono</TableCell>
+              <TableCell style={{ color: 'white',fontSize: '1.2rem', fontWeight: 'bold' }}>Medallas</TableCell>
+              <TableCell align="right" style={{ color: 'white',fontSize: '1.2rem', fontWeight: 'bold' }}>Acciones</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -356,11 +356,11 @@ const PokemonCoach = () => {
                 <TableCell>{coach.gym_medals}</TableCell>
                 <TableCell align="right">
                   <IconButton onClick={() => editar(coach)} aria-label="delete">
-                    <EditIcon />
+                    <EditIcon   style={{ color: 'blue' }}/>
                   </IconButton>
 
                   <IconButton onClick={() => deleteCoach(coach._id)}>
-                    <DeleteIcon />
+                    <DeleteIcon style={{ color: 'red' }} />
                   </IconButton>
                 </TableCell>
               </TableRow>
