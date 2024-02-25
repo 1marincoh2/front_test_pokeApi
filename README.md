@@ -36,11 +36,11 @@ To use this template, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/1marincoh2/poke_service.git
+   git clone https://github.com/1marincoh2/front_test_pokeApi
 
 2. **Navigate to the project directory:**
 
-   cd poke_service
+   cd front_test_pokeApi
 
 3. **Install dependencies:**
 
