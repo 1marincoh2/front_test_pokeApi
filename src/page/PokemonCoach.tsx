@@ -183,7 +183,7 @@ const PokemonCoach = () => {
     });
   };
   const downloadFile = () => {
-    let data = [
+    const data = [
       {
         sheet: "lista",
         columns: [
@@ -201,7 +201,7 @@ const PokemonCoach = () => {
       },
     ];
 
-    let settings = {
+    const settings = {
       fileName: "lista_entrenadores",
     };
     xlsx(data, settings);
